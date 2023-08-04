@@ -1,7 +1,7 @@
 <template>
   <div id="carousel" class="carousel slide">
     <div class="carousel-inner">
-      <div class="carousel-item" :class="{ 'active': index === 0 }" v-for="(item, index) in this.items" :key="item">
+      <div class="carousel-item" :class="{ 'active': index === 0 }" v-for="(item, index) in items" :key="index">
         <img :src="item" class="d-block w-100" alt="IMAGE">
       </div>
     </div>

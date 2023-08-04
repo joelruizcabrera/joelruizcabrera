@@ -1,6 +1,6 @@
 <template>
   <div class="page__index">
-    <Carousel :items="sliderImages"></Carousel>
+    <Carousel keep-alive :items="sliderImages"></Carousel>
   </div>
 </template>
 
