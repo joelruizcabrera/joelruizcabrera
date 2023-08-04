@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Joel Ruiz Cabrera
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/66c16be9-9b6a-4dae-8395-6f42ed42d375/deploy-status)](https://app.netlify.com/sites/joelruizcabrera/deploys)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
