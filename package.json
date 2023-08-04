@@ -9,10 +9,20 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@ant-design-vue/nuxt": "^1.1.0",
     "@nuxt/devtools": "latest",
     "@nuxtjs/strapi": "^1.9.3",
     "@types/node": "^18.17.1",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "5.0.0-alpha.6",
+    "@vue/apollo-composable": "^4.0.0-beta.8",
+    "feather-icons": "^4.29.0",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6",
+    "vue-carousel": "^0.18.0",
+    "vue3-carousel": "^0.3.1"
   }
 }

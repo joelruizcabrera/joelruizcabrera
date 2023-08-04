@@ -1,19 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@ant-design-vue/nuxt", "@nuxtjs/strapi"],
-  strapi: {
-    url: process.env.STRAPI_URL || "http://localhost:1337",
-    prefix: "/api",
-    version: "v4",
-    cookie: {},
-    cookieName: "strapi_jwt"
+  modules: ["@nuxtjs/apollo"],
+  apollo: {
+    autoImports: true,
+    clients: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+      }
+    }
   },
-  runtimeConfig: {
-    public: {
-      strapi: {
-        url: "http://localhost:1337"
-      },
+  app: {
+    head: {
+      link: [
+          {
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css'
+          }
+      ],
+      script: [
+        {
+          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js",
+          body: true
+        }
+      ]
     }
   }
 })
