@@ -10,6 +10,11 @@ export default defineNuxtConfig({
       }
     }
   },
+  build: {
+    transpile: [
+        'tslib'
+    ]
+  },
   app: {
     head: {
       link: [

@@ -23,6 +23,7 @@
     "feather-icons": "^4.29.0",
     "graphql": "^16.7.1",
     "graphql-tag": "^2.12.6",
+    "tslib": "^2.6.1",
     "vue-carousel": "^0.18.0",
     "vue3-carousel": "^0.3.1"
   }
