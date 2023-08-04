@@ -1,0 +1,4 @@
+<template>
+  asd
+  <NuxtPage />
+</template>
